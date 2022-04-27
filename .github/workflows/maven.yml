@@ -46,7 +46,7 @@ jobs:
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: melkabli/smathouse-java-app
+          image: idockerr12/smathouse-java-app
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile
@@ -88,6 +88,5 @@ jobs:
           # (Optional, default: "web")
           # Select the process type for which you want the docker container to be uploaded.
           # By default, this argument is set to "web".
-          # For more information look at https://devcenter.heroku.com/articles/process-model
           process_type: web
 
