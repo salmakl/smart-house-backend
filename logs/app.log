@@ -1,0 +1,70 @@
+2022-04-27 06:54:44.498  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-02.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:17, serverValue:17284}] to cluster0-shard-00-02.8pzw0.mongodb.net:27017
+2022-04-27 06:54:45.392  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-01.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:16822}] to cluster0-shard-00-01.8pzw0.mongodb.net:27017
+2022-04-27 06:54:47.051  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-00.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:17042}] to cluster0-shard-00-00.8pzw0.mongodb.net:27017
+2022-04-27 09:31:49.871  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-02.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.8pzw0.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-02.8pzw0.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131) ~[mongodb-driver-core-4.0.5.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-02.8pzw0.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1367) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1301) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.0.5.jar:na]
+	... 5 common frames omitted
+
+2022-04-27 09:31:49.871  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-01.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.8pzw0.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-01.8pzw0.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131) ~[mongodb-driver-core-4.0.5.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-01.8pzw0.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1367) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1301) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.0.5.jar:na]
+	... 5 common frames omitted
+
+2022-04-27 09:31:49.870  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-00.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.8pzw0.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-00.8pzw0.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127) ~[mongodb-driver-core-4.0.5.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131) ~[mongodb-driver-core-4.0.5.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-00.8pzw0.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1367) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1301) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203) ~[mongodb-driver-core-4.0.5.jar:na]
+	... 5 common frames omitted
+
+2022-04-27 09:32:00.830  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-01.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:23, serverValue:19869}] to cluster0-shard-00-01.8pzw0.mongodb.net:27017
+2022-04-27 09:32:00.831  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-02.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:22, serverValue:20491}] to cluster0-shard-00-02.8pzw0.mongodb.net:27017
+2022-04-27 09:32:00.831  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-00.8pzw0.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:24, serverValue:20110}] to cluster0-shard-00-00.8pzw0.mongodb.net:27017
+2022-04-27 09:32:00.951  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-01.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.8pzw0.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=114320200, setName='atlas-jp7slh-shard-0', canonicalAddress=cluster0-shard-00-01.8pzw0.mongodb.net:27017, hosts=[cluster0-shard-00-01.8pzw0.mongodb.net:27017, cluster0-shard-00-00.8pzw0.mongodb.net:27017, cluster0-shard-00-02.8pzw0.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.8pzw0.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, lastWriteDate=Wed Apr 27 09:31:59 WET 2022, lastUpdateTimeNanos=169728923285100}
+2022-04-27 09:32:00.953  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-00.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.8pzw0.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=114199400, setName='atlas-jp7slh-shard-0', canonicalAddress=cluster0-shard-00-00.8pzw0.mongodb.net:27017, hosts=[cluster0-shard-00-01.8pzw0.mongodb.net:27017, cluster0-shard-00-00.8pzw0.mongodb.net:27017, cluster0-shard-00-02.8pzw0.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.8pzw0.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, lastWriteDate=Wed Apr 27 09:31:59 WET 2022, lastUpdateTimeNanos=169728923602400}
+2022-04-27 09:32:00.956  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-02.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.8pzw0.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=114741400, setName='atlas-jp7slh-shard-0', canonicalAddress=cluster0-shard-00-02.8pzw0.mongodb.net:27017, hosts=[cluster0-shard-00-01.8pzw0.mongodb.net:27017, cluster0-shard-00-00.8pzw0.mongodb.net:27017, cluster0-shard-00-02.8pzw0.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-02.8pzw0.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_3'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000003, setVersion=1, lastWriteDate=Wed Apr 27 09:31:59 WET 2022, lastUpdateTimeNanos=169728923733200}
+2022-04-27 09:32:00.959  INFO 12228 --- [cluster-ClusterId{value='626812e617a1b241afa070a8', description='null'}-cluster0-shard-00-02.8pzw0.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-02.8pzw0.mongodb.net:27017
